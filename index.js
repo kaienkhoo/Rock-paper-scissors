@@ -22,7 +22,7 @@ function getHumanChoice() {
 function playRound(humanChoice,computerChoice) {
     humanChoice = humanChoice.toLowerCase()
 
-    if(humanChoice === 'rock' && computerChoice === 'scissors') {
+    if(humanChoice === 'rock' && computerChoice === 'scissors' ) {
         humanScore += 1;
         console.log("You win ! Rock beats Scissors")
     } else if(humanChoice === 'rock' && computerChoice === 'paper') {
@@ -56,9 +56,10 @@ function playGame() {
         const humanSelection = getHumanChoice()
         const computerSelection = getComputerChoice()
         playRound(humanSelection,computerSelection)
-        console.log(`Your score: ${humanScore}`)
-        console.log(`Computer score: ${computerScore}`)
     }
+
+    console.log(`Your score: ${humanScore}`)
+    console.log(`Computer score: ${computerScore}`)
 
     if(computerScore > humanScore){
         console.log("You lose !")
