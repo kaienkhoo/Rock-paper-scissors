@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+}
+
+body, .computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.computer,
+.score,
+.player,
+.round {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.score {
+    width: 180px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+}
